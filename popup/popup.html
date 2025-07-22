@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Google Docs Theme Switcher</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>Theme Switcher</h1>
+    </header>
+
+    <div class="theme-grid" id="theme-grid">
+      <!-- Theme cards will be populated by JavaScript -->
+    </div>
+
+    <div class="popup-footer">
+      <label class="auto-detect-label">
+        <input type="checkbox" id="auto-detect" />
+        <span>Auto-detect OS theme</span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

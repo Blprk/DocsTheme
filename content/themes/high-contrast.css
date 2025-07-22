@@ -1,0 +1,203 @@
+/* High Contrast Theme - Enhanced for better visibility and accessibility */
+:root {
+    --primary-bg: #000000;
+    --secondary-bg: #121212;
+    --tertiary-bg: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #ffff00;
+    --border-color: #ffffff;
+    --accent-color: #00ff00;
+    --hover-bg: #333333;
+    --focus-color: #ffa500;
+    --shadow: rgba(255,255,255,0.7);
+    --docs-material-primary-bg: var(--primary-bg);
+    --docs-material-secondary-bg: var(--secondary-bg);
+  }
+  
+  /* Global document background */
+  body, html, .docs-homescreen-container {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-primary) !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--secondary-bg);
+  }
+  
+  /* Main application container */
+  .kix-appview-editor-container,
+  .kix-appview-editor,
+  .kix-document-container {
+    background-color: var(--secondary-bg) !important;
+  }
+  
+  /* Document pages */
+  .kix-page,
+  .kix-page-paginated,
+  .kix-page-content,
+  .kix-page-shadow,
+  .kix-rotatingtilemanager-page {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--border-color) !important;
+    box-shadow: 0 2px 8px var(--shadow) !important;
+  }
+  
+  /* Page content area */
+  .kix-page-content-wrap,
+  .kix-page-content {
+    background-color: var(--primary-bg) !important;
+  }
+  
+  /* Toolbar styling */
+  .docs-material-gm-toolbar,
+  .docs-material-gm-toolbar-container,
+  [role="toolbar"],
+  .docs-material-gm-toolbar-background {
+    background-color: var(--primary-bg) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+  }
+  
+  /* Reset title and menu bars to default */
+  .docs-title, .docs-title-inner,
+  .docs-titlebar, .docs-titlebar-bg,
+  .docs-titlebar-buffer,
+  .docs-material-gm-toolbar,
+  .docs-material-gm-toolbar-container,
+  [role="toolbar"],
+  .docs-material-gm-toolbar-background,
+  .docs-menubar,
+  .docs-menubar-inner,
+  .docs-menubar-inner-box,
+  .docs-menubar-inner-box-outer,
+  .docs-menubar-inner-box-inner {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: none !important;
+    -webkit-app-region: no-drag !important;
+  }
+
+  /* Document content area */
+  .kix-page-content,
+  .kix-page-content-wrap,
+  .kix-rotatingtilemanager-page,
+  .kix-page-paginated,
+  .kix-page-shadow {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--border-color) !important;
+  }
+
+  /* Toolbar buttons - reset to default */
+  .docs-material-gm-toolbar .goog-toolbar-button,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button,
+  .docs-material-gm-toolbar .goog-flat-menu-button,
+  .goog-toolbar-button-outer-box,
+  .goog-toolbar-button-inner-box {
+    color: inherit !important;
+    background-color: inherit !important;
+    border: inherit !important;
+    margin: inherit !important;
+    border-radius: inherit !important;
+  }
+  
+  .docs-material-gm-toolbar .goog-toolbar-button:hover,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button:hover,
+  .docs-material-gm-toolbar .goog-flat-menu-button:hover {
+    background-color: var(--hover-bg) !important;
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Menu styling - reset to default */
+  .docs-material-gm-menu,
+  .goog-menu,
+  .goog-menuitem,
+  .apps-menuitem {
+    background-color: inherit !important;
+    color: inherit !important;
+    border: inherit !important;
+  }
+  
+  /* Side panels */
+  .docs-material-gm-sidebar,
+  .docs-explore-widget,
+  .docs-material-gm-sidebar-content {
+    background-color: var(--primary-bg) !important;
+    border-left: 2px solid var(--border-color) !important;
+  }
+  
+  /* Comments and suggestions */
+  .docos-replyview,
+  .docos-anchoredreplyview {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+  }
+  
+  /* Form controls and input fields */
+  input, textarea, .docs-material-gm-textinput,
+  .docs-texteventtarget-html,
+  .kix-rotatingtilemanager-page,
+  .kix-page-paginated,
+  .kix-page-shadow,
+  .kix-page-content,
+  .docs-texteventtarget,
+  .kix-canvas-tile-content,
+  .docssharedwiz_editor_applestoappseditor,
+  .kix-appview-editor {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--border-color) !important;
+    caret-color: var(--accent-color) !important;
+  }
+  
+  /* Focus states for better keyboard navigation */
+  :focus, :focus-visible {
+    outline: 3px solid var(--focus-color) !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* Links and interactive elements */
+  a, .docs-link, .docs-hyperlink {
+    color: var(--accent-color) !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Selection highlight */
+  ::selection {
+    background: var(--accent-color) !important;
+    color: #000 !important;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+    border-left: 1px solid var(--border-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border: 2px solid var(--secondary-bg);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+  }
+  
+  /* Header and footer areas */
+  .kix-page-header,
+  .kix-page-footer {
+    background-color: var(--primary-bg) !important;
+    border: 2px solid var(--border-color) !important;
+  }
+  
+  /* Ruler */
+  .kix-ruler,
+  .kix-ruler-background {
+    background-color: var(--primary-bg) !important;
+    border: 1px solid var(--border-color) !important;
+  }

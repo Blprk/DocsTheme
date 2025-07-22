@@ -1,0 +1,115 @@
+/* Solarized Theme - Authentic solarized light colors */
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+  }
+  
+  /* Global document background */
+  body, html {
+    background-color: var(--base2) !important;
+    color: var(--base00) !important;
+  }
+  
+  /* Main application container */
+  .kix-appview-editor-container,
+  .kix-appview-editor,
+  .kix-document-container {
+    background-color: var(--base2) !important;
+  }
+  
+  /* Document pages */
+  .kix-page,
+  .kix-page-paginated {
+    background-color: var(--base3) !important;
+    color: var(--base00) !important;
+    box-shadow: 0 2px 8px rgba(0,43,54,0.15) !important;
+  }
+  
+  /* Page content area */
+  .kix-page-content-wrap,
+  .kix-page-content {
+    background-color: var(--base3) !important;
+  }
+  
+  /* Toolbar styling */
+  .docs-material-gm-toolbar,
+  .docs-material-gm-toolbar-container,
+  [role="toolbar"],
+  .docs-material-gm-toolbar-background {
+    background-color: var(--base3) !important;
+    border-bottom: 1px solid var(--base1) !important;
+  }
+  
+  /* Toolbar buttons */
+  .docs-material-gm-toolbar .goog-toolbar-button,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button,
+  .docs-material-gm-toolbar .goog-flat-menu-button {
+    color: var(--base00) !important;
+    background-color: transparent !important;
+  }
+  
+  .docs-material-gm-toolbar .goog-toolbar-button:hover,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button:hover,
+  .docs-material-gm-toolbar .goog-flat-menu-button:hover {
+    background-color: var(--base2) !important;
+  }
+  
+  /* Menu styling */
+  .docs-material-gm-menu,
+  .goog-menu,
+  .goog-menuitem,
+  .apps-menuitem {
+    background-color: var(--base3) !important;
+    color: var(--base00) !important;
+    border-color: var(--base1) !important;
+  }
+  
+  /* Side panels */
+  .docs-material-gm-sidebar,
+  .docs-explore-widget,
+  .docs-material-gm-sidebar-content {
+    background-color: var(--base3) !important;
+    border-left: 1px solid var(--base1) !important;
+  }
+  
+  /* Comments and suggestions */
+  .docos-replyview,
+  .docos-anchoredreplyview {
+    background-color: var(--base3) !important;
+    color: var(--base00) !important;
+  }
+  
+  /* Input fields */
+  input, textarea, .docs-material-gm-textinput {
+    background-color: var(--base2) !important;
+    color: var(--base00) !important;
+    border-color: var(--base1) !important;
+  }
+  
+  /* Header and footer areas */
+  .kix-page-header,
+  .kix-page-footer {
+    background-color: var(--base3) !important;
+    border-color: var(--base1) !important;
+  }
+  
+  /* Ruler */
+  .kix-ruler,
+  .kix-ruler-background {
+    background-color: var(--base3) !important;
+    border-color: var(--base1) !important;
+  }

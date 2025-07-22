@@ -1,0 +1,192 @@
+/* Forest Green Theme - Enhanced for Google Docs */
+:root {
+  --primary-bg: #0d1b1e;
+  --secondary-bg: #1a2e2a;
+  --tertiary-bg: #2a4b3e;
+  --text-primary: #e0f2e9;
+  --text-secondary: #a8c5b8;
+  --border-color: #3a5a40;
+  --accent-color: #4caf7d;
+  --hover-bg: #2a4b3e;
+  --shadow: rgba(0,0,0,0.3);
+  --docs-material-primary-bg: var(--primary-bg);
+  --docs-material-secondary-bg: var(--secondary-bg);
+  --docs-material-text-primary: var(--text-primary);
+  --docs-material-text-secondary: var(--text-secondary);
+}
+
+/* Global document background */
+body, html, .docs-homescreen-container {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Main document area */
+.kix-appview-editor-container, 
+.kix-appview-editor, 
+.kix-rotatingtilemanager {
+  background-color: var(--secondary-bg) !important;
+}
+
+/* Page containers */
+.kix-page-paginated,
+.kix-page,
+.kix-page-content,
+.kix-page-content-wrapper,
+.kix-page-content-outer,
+.kix-page-paginated-shadow {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Canvas elements */
+.kix-canvas-tile-content {
+  background-color: var(--secondary-bg) !important;
+}
+
+/* Text content */
+.kix-paragraphrenderer,
+.kix-paragraphrenderer span,
+.kix-wordhtmlgenerator-word-node,
+.kix-lineview-text-block {
+  color: var(--text-primary) !important;
+}
+
+/* Toolbars and UI elements */
+.docs-title,
+.docs-title-inner,
+.docs-title-wrapper,
+.docs-gm {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Sidebar */
+.docs-homescreen-sidebar,
+.docs-homescreen-sidebar-header {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-bg);
+}
+
+/* Links */
+a, 
+.kix-wordhtmlgenerator-word-node[href] {
+  color: var(--accent-color) !important;
+}
+
+a:hover, 
+.kix-wordhtmlgenerator-word-node[href]:hover {
+  color: var(--text-primary) !important;
+  text-decoration: underline !important;
+}
+
+/* Buttons */
+.docs-homescreen-sidebar-button,
+.docs-homescreen-sidebar-button-active,
+.docs-homescreen-sidebar-button-hover {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+}
+
+.docs-homescreen-sidebar-button:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="search"],
+textarea {
+  background-color: var(--tertiary-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Tables */
+table, tr, td {
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Main containers */
+.kix-appview-editor-container,
+.kix-appview-editor,
+.kix-document-container {
+  background-color: var(--secondary-bg) !important;
+}
+
+/* Document pages */
+.kix-page,
+.kix-page-paginated {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 2px 8px var(--shadow) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Toolbar and UI elements */
+.docs-title, .docs-title-inner,
+.docs-titlebar, .docs-titlebar-bg,
+.docs-material-gm-toolbar,
+.docs-material-gm-toolbar-container {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* Buttons and inputs */
+.docs-gm,
+.docs-gm:active,
+.docs-gm:focus,
+.docs-gm:hover {
+  background-color: var(--tertiary-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Links */
+a {
+  color: var(--accent-color) !important;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-color) !important;
+  color: var(--primary-bg) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}

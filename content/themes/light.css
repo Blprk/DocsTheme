@@ -1,0 +1,56 @@
+/* Light Theme - Clean and bright */
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8f9fa;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
+    --border-color: #e8eaed;
+    --accent-color: #1a73e8;
+    --hover-bg: #f1f3f4;
+  }
+  
+  /* Toolbar styling */
+  .docs-material-gm-toolbar,
+  .docs-material-gm-toolbar-container,
+  [role="toolbar"] {
+    background-color: var(--primary-bg) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+  }
+  
+  /* Menu styling */
+  .docs-material-gm-menu,
+  .goog-menu,
+  .apps-menuitem {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  /* Document area */
+  .kix-document-container,
+  .kix-appview-editor {
+    background-color: var(--secondary-bg) !important;
+  }
+  
+  /* Page styling */
+  .kix-page {
+    background-color: var(--primary-bg) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+  
+  /* Text elements */
+  .docs-material-gm-toolbar .goog-toolbar-button,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button {
+    color: var(--text-primary) !important;
+  }
+  
+  .docs-material-gm-toolbar .goog-toolbar-button:hover,
+  .docs-material-gm-toolbar .goog-toolbar-menu-button:hover {
+    background-color: var(--hover-bg) !important;
+  }
+  
+  /* Side panels */
+  .docs-material-gm-sidebar,
+  .docs-explore-widget {
+    background-color: var(--primary-bg) !important;
+    border-left: 1px solid var(--border-color) !important;
+  }
